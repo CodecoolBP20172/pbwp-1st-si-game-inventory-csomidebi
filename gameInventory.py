@@ -33,7 +33,7 @@ def add_to_inventory(inventory, added_items):
 # - "count,desc" means the table is ordered by count (of items in the inventory)
 #   in descending order
 # - "count,asc" means the table is ordered by count in ascending order
-def print_table(inventory, order="count,desc"):
+def print_table(inventory, order=None):
     width = max(len(x)for x in inventory.keys()) + 4
     print ("Inventory:")
     print ("count".rjust(7, " ") + "item name".rjust(width, " "))
